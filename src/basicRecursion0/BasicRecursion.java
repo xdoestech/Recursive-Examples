@@ -19,7 +19,7 @@ public class BasicRecursion {
 			return isSubsetSum(set, n - 1, sum);
 		}
 		return isSubsetSum(set, n - 1, sum) || isSubsetSum(set, n - 1, sum - set[n - 1]);
-	}
+	} 
 	
 	/**
 	 * returns the ways to get a specific basketball score
@@ -51,5 +51,16 @@ public class BasicRecursion {
 		  } else {
 		    return Math.min(numbers[startIndex], recursiveMin(numbers,startIndex+1));
 		  }
+		}
+	/**
+	 * returns binary representation of string
+	 * @param num
+	 * @return
+	 */
+	public String decToBinary (int num) {
+		  if (num < 2)
+		    return Integer.toString(num);
+		  else
+		    return decToBinary(num/2) + num%2;
 		}
 }

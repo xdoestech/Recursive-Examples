@@ -1,5 +1,7 @@
 package basicRecursion0;
 
+import basicRecursion0.LinkedChainBasic.*;
+
 public class BasicRecursion {
 	/**
 	 * checks to see if sum is possible from a set integers in array
@@ -63,4 +65,6 @@ public class BasicRecursion {
 		  else
 		    return decToBinary(num/2) + num%2;
 		}
+	
 }
+
